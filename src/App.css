@@ -1,0 +1,116 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.carousel-item img {
+  min-height: 300px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.custom-tabs {
+  background: #edf4f6;
+  border-radius: var(--bs-nav-pills-border-radius);
+  padding: .25rem;
+}
+.custom-tabs.nav-pills .nav-link.active {
+  background-color: #fff; /* custom purple */
+  font-weight: 500;
+  color: #000;
+}
+
+.custom-tabs.nav-pills .nav-link {
+  border: 1px solid transparent;
+  color: #000;
+}
+
+.custom-tabs.nav-pills .nav-link:hover {
+  border: 1px solid #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.rt-pills {
+  border-radius: 1rem !important;
+  background: rgb(236, 244, 255)!important;
+  color: rgb(27, 33, 44) !important;
+  font-size: .675rem;
+  font-weight: 600;
+  padding: .25rem .5rem;
+}
+
+
+
+
+.banner {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dialog-close:hover {
+  color: #666;
+}
